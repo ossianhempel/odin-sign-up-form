@@ -25,6 +25,33 @@ p {
     height: auto;
 }
 
+.logo-container {
+    /* should probably be relative or sum? */
+    position: absolute;
+    top: 250px;
+    /* sizing is off */
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid red;
+}
+
+.img-credit {
+    position: relative;
+    margin: 0 auto;
+    bottom: 5px;
+    /* left: 50%; */
+    border: 2px solid green;
+}
+
+.img-credit p {
+    text-align: center;
+}
+
+
 .right-container {
     display: flex;
     flex-direction: column;
