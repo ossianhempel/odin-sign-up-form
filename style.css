@@ -1,7 +1,14 @@
 :root {
-    --normal-font-size: 20px;
+    --normal-font-size: 25px;
     --background-color: rgb(255, 251, 251);
 }
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }`
 
 
 * {
@@ -34,6 +41,7 @@ p {
 .logo-container {
     /* should probably be relative or sum? */
     position: relative;
+    display: flex;
     bottom: 400px;
     width: inherit;
     display: flex;
@@ -42,6 +50,21 @@ p {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid red;
+    font-family: norse-bold;
+    height: 100px;
+}
+
+
+
+.logo-container img {
+    width: auto;
+    height: inherit;
+}
+
+.logo-container {
+    font-size: 60px;
+    line-height: 120px;
+    text-align: center;
 }
 
 .img-credit {
@@ -80,15 +103,43 @@ p {
     font-size: var(--normal-font-size);
 }
 
-
+span {
+    font-style: italic;
+}
 
 .right-mid-container {
     border: 3px solid orange;
-    height: 30%;
+    height: max(380px, 30%);
     padding-left: 30px;
     font-size: var(--normal-font-size);
     background-color: white;
+}
 
+form {
+    display: flex;
+    gap: 80px;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
 }
 
 .right-lower-container {
@@ -98,4 +149,12 @@ p {
     padding-top: 20px;
     background-color: var(--background-color);
 
+}
+
+button {
+    height: 50px;
+    width: 240px;
+    border-radius: 8px;
+    background-color: rgb(31, 108, 31);
+    color: white;
 }
