@@ -140,6 +140,12 @@ input.password-error {
     border: 1px solid red;
 }
 
+p.password-error {
+    color: red;
+    font-size: 10px;
+    margin-top: -15px;
+}
+
 input:focus {
     border: 1px solid blue;
     box-shadow: 0.5px 1px 5px;
@@ -161,7 +167,6 @@ label {
 
 
 .right-lower-container {
-    /* border: 3px solid orange; */
     height: 35%;
     padding-left: 30px;
     padding-top: 20px;
