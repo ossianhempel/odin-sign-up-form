@@ -52,8 +52,6 @@ p {
     height: 100px;
 }
 
-
-
 .logo-container img {
     width: auto;
     height: inherit;
@@ -87,29 +85,26 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 30px;
     padding-left: 30px;
     height: 35%;
-    /* border: 3px solid orange; */
     background-color: var(--background-color);
-
-
 }
 
 .right-upper-container p {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex-wrap: wrap;
-    width: 75%;
+    width: 80%;
     font-size: var(--normal-font-size);
 }
 
-span {
+p.two {
+    margin-top: 30px;
+}
+
+.italic {
     font-style: italic;
 }
 
 .right-mid-container {
-    /* border: 3px solid orange; */
     height: max(380px, 30%);
     padding-left: 30px;
     font-size: var(--normal-font-size);
