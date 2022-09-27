@@ -27,7 +27,7 @@ p {
 
 .left-container {
     width: 33vw;
-    /* border: 3px solid yellow; */
+    border: 3px solid yellow;
     height: inherit;
 }
 
@@ -40,34 +40,30 @@ p {
 .logo-container {
     position: relative;
     display: flex;
-    bottom: 400px;
+    bottom: 80%;
     width: inherit;
     display: flex;
     justify-content: center;
     background-color: black;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    /* border: 2px solid red; */
     font-family: norse-bold;
     height: 100px;
-}
-
-.logo-container img {
-    width: auto;
-    height: inherit;
-}
-
-.logo-container {
     font-size: 60px;
     line-height: 120px;
     text-align: center;
 }
 
+.logo-container img {
+    width: auto;
+    height: 90px;
+    margin: auto 0;
+}
+
 .img-credit {
     position: relative;
     margin: 0 auto;
-    bottom: 150px;
-    /* left: 50%; */
+    bottom: 17%;
     text-align: center;
     color: white;
 }
@@ -78,6 +74,7 @@ p {
     /* justify-content: space-between; */
     justify-content: space-around;
     width: 75vw;
+    height: inherit;
     /* border: 3px solid yellow; */
 }
 
